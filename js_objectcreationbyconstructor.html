@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+
+ 
+var obs=[];
+function Add(){
+	var id= parseInt(document.getElementById('sn2').value);
+                       
+         var nm=document.getElementById('sn1').value;
+	      var per=parseInt(document.getElementById('sn3').value);
+
+	        var ob=new student(id,nm,per);
+
+
+                         
+                        
+
+	        	
+	               
+ 
+             obs.push(ob);
+
+var table=document.getElementById("table1");
+var tr=table.insertRow();
+var td1=tr.insertCell(0);
+var td2=tr.insertCell(1);
+var td3=tr.insertCell(2);
+td1.innerHTML=ob.sid;
+td2.innerHTML=ob.sname;
+td3.innerHTML=ob.percentage;
+
+
+
+
+}
+function student(sid,sname,per){
+	this.sid=sid;
+	this.sname=sname;
+	this.percentage=per;
+}
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+	sttudentname:<input type="" type="text" id="sn1">
+	<br>
+
+	sid:<input type="" type="number" id="sn2">
+	<br>
+	percentage:<input type="" type="number" id="sn3">
+	<br>
+
+<input type="button" value="Add" onclick="Add()">
+<br>
+
+
+<table border="3" id="table1" align="center">
+	<br>
+			<tr>
+				<th>Student ID</th>
+				<th>Name</th>
+				<th>Percentage</th>
+
+			</tr>
+
+
+			
+		</table>
+
+	
+
+</body>
+</html>

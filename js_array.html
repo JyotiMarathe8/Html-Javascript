@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+let arr=[11,12,13,14,"jyoti"];
+console.log(arr);
+//push add at last
+arr.push(90);
+arr.push("Deepa");
+//unshift add in front
+arr.unshift("Shubham");
+console.log(arr);
+//pop remove elements from last
+var remove=arr.pop();
+console.log(arr);
+// shift remove from first
+arr.shift();
+console.log(arr);
+
+
+
+
+
+
+var arr2=arr.slice(1,6)//slice is used to display from and to ,returns a array  with elements specified for start to end1
+console.log(arr);
+console.log(arr2);
+//splice is used to add and delete from original array
+//splice(index,delete,data to added)//first number indicate to add, 2 number to delete and remaining data
+arr.splice(1,2,"a","b","c")
+console.log(arr);
+//delete deepa
+console.log(arr);
+
+// store function in variable
+
+
+function greet(nm) {
+
+	console.log("Good Morning"+nm);
+	// body...
+}
+
+//we can call function by arguments and also without argument
+
+var x=greet("jyoti");
+
+// call function without argument
+var y= greet;
+var r=y("vaibhav");
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

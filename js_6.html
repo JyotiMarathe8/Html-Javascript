@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function greet()
+{
+	document.writeln("welcome");
+	
+
+}
+		
+function login(username, password,f1)
+{
+	f1();
+	
+	if(username=="admin"&& password=="123")
+	
+		document.write("successful");
+
+	
+	else
+		document.write("invalid");
+	
+}
+
+
+
+login("admin","123",greet);
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

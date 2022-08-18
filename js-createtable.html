@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function Add()
+		{
+			var table=document.getElementById("table1");
+var fname=document.getElementById("t1").value;
+var Qualifi=document.getElementById("Qua").value;
+var tr=table.insertRow();
+var td1=tr.insertCell(0);
+var td2=tr.insertCell(1);
+td1.innerHTML=fname;
+td2.innerHTML=Qualifi;
+
+
+
+
+
+		}
+
+
+
+
+	</script>
+
+	<form>
+		Name:<input type="text" id="t1">
+		<br>
+		Qualification:<input type="text" id="Qua">
+		<br>
+
+		<input type="button" value ="Add" onclick="Add()">
+		<br>
+<br>
+<br>
+
+
+		<table border="2" id="table1">
+			<tr>
+				<th>Name</th>
+				<th>Qualification</th>
+
+			</tr>
+
+
+			
+		</table>
+		
+
+	</form>
+</head>
+<body>
+
+</body>
+</html>

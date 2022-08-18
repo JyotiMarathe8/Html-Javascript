@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		/*function Add()
+		{
+			
+var fname=document.getElementById("t1").value;
+var u1=document.getElementById("namelist");
+var li=document.createElement('li');
+li.innerHTML=fname;
+u1.appendChild(li);
+
+
+}
+document.getElementById("result").value=document.getElementById("t1").value;
+
+
+var arr=["shubham"];
+
+
+console.log(arr);*/
+
+
+function Add()
+		{
+			
+
+			var n1=parseInt(document.getElementById("t1").value);
+			document.getElementById("result").value=n1;
+			var arr=[1,2];
+			arr.push(n1);
+			document.write(arr);
+
+		}
+
+
+
+	</script>
+
+	
+
+</head>
+<body >
+	<form>
+Enter number:<input type="text" id ="t1">
+
+
+Result:<input type="text" id="result" readonly>
+<input type="button" value="Add" onclick="Add()">
+
+	</form>
+
+</body>
+</html>
